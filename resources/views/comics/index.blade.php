@@ -15,6 +15,9 @@
     {{-- table --}}
     <section>
         <div class="container mt-4">
+            <div class="text-end">
+                <a href="{{ route('comics.create') }}" class="btn btn-primary">Crea nuovo fumetto</a>
+            </div>
             <table class="table table-striped">
                 <thead>
                     <tr>
