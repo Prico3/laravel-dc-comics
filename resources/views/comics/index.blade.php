@@ -34,7 +34,11 @@
                             <td>{{ $item->sale_date }}</td>
                             <td>{{ $item->type }}</td>
                             <td>
-                                <button type="button" class="btn btn-outline-success">Mostra</button>
+                                <a href="{{ route('comics.show', $item->id) }}" type="button"
+                                    class="btn btn-outline-success">
+                                    <i class="fa-solid fa-eye"></i>
+                                </a>
+
                             </td>
                         </tr>
                     @endforeach
