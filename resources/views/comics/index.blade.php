@@ -22,6 +22,8 @@
                         <th scope="col">Prezzo</th>
                         <th scope="col">Data di vendita</th>
                         <th scope="col">Genere</th>
+                        <th scope="col">Dettagli</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -31,6 +33,9 @@
                             <td>{{ $item->price }}</td>
                             <td>{{ $item->sale_date }}</td>
                             <td>{{ $item->type }}</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-success">Mostra</button>
+                            </td>
                         </tr>
                     @endforeach
 
